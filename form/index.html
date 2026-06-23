@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>This is a Form</h1>
+    <form action="submit_form.php" method="POST">
+      <fieldset>
+        <legend>Personal information</legend>
+        <lable for="fullname">Full Name:</lable>
+        <input
+          type="text"
+          id="fullName"
+          name="user"
+          placeholder="Enter your Name"
+          required
+        />
+        <br /><br />
+
+        <label for="userPass"> Paassword:</label>
+        <input type="password" id="userPass" name="user" placeholder="Enter your Password" required />
+        <br /><br />
+
+        <lable>Gender:</lable>
+        <input type="radio" id="male" name="gender" value="male" />
+        <lable for="male">Male</lable>
+
+        <input type="radio" id="female" name="gender" value="female" />
+        <lable for="female">Female</lable>
+      </fieldset>
+
+      <br />
+
+      <fieldset>
+        <legend>Preferences & Feedback</legend>
+        <lable for="country">Country:</lable>
+        <select id="country" name="user_country">
+          <option value="in" selected>India</option>
+          <option value="us">USA</option>
+          <option value="uk">UK</option>
+        </select>
+        <br /><br />
+
+        <lable>Interests:</lable>
+        <input type="checkbox" id="coding" name="interests" value="coding" />
+        <lable for="coding">Coding</lable>
+        <input type="checkbox" id="design" name="interests" value="design" />
+        <lable for="design">Design</lable>
+        <br /><br />
+
+        <lable for="comments">Feedback:</lable>
+        <textarea
+          id="comments"
+          id="user_feedback"
+          rows="4"
+          cols="40"
+          placeholder="write your messages] here..."
+        >
+        </textarea>
+      </fieldset>
+      <br />
+
+      <button type="submit">Submit Registration</button>
+    </form>
+  </body>
+</html>
